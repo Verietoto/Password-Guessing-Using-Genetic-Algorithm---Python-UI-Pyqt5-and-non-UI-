@@ -1,4 +1,4 @@
-# Genetic Algorithm Implementation In <strong> GUI </strong> and Non GUI form
+# Genetic Algorithm Implementation In <strong> GUI </strong> and Non GUI Form
 Creating a simple genetic algorithm implementation in GUI form and non UI form for learning purpose. This is for public use, don't forget of citation
 if using my software for presentation or something else :D
 
