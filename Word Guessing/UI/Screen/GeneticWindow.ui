@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>961</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>700</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="mainFrame">
+      <property name="minimumSize">
+       <size>
+        <width>700</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#mainFrame{
+	
+	border-image: url(:/newPrefix/mainFrame.png);
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="1,7,6">
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="topMargin">
+        <number>50</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>50</number>
+       </property>
+       <item alignment="Qt::AlignTop">
+        <widget class="QFrame" name="logoFrame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100000</width>
+           <height>100000</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#logoFrame{
+	border: None;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>518</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="wordGuessingLogo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>Background/WORDGUESSER.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="indent">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="contentFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>600</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#contentFrame{
+
+border:None;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,7">
+          <property name="leftMargin">
+           <number>50</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="bestFintessScore">
+            <property name="font">
+             <font>
+              <family>Bitstream Charter</family>
+              <pointsize>24</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:rgb(62, 191, 191)</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Best &lt;/span&gt;Guess: &lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;NONE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="bestFintessScore_2">
+            <property name="font">
+             <font>
+              <family>Bitstream Charter</family>
+              <pointsize>24</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:rgb(62, 191, 191)</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Generation &lt;/span&gt;Number: &lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;NONE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="parent1">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>20</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent3">
+             <property name="geometry">
+              <rect>
+               <x>380</x>
+               <y>20</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent6">
+             <property name="geometry">
+              <rect>
+               <x>13</x>
+               <y>150</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent2">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>20</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent4">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>20</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent5">
+             <property name="geometry">
+              <rect>
+               <x>750</x>
+               <y>20</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent7">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>150</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="paent8">
+             <property name="geometry">
+              <rect>
+               <x>390</x>
+               <y>150</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent9">
+             <property name="geometry">
+              <rect>
+               <x>590</x>
+               <y>150</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="parent10">
+             <property name="geometry">
+              <rect>
+               <x>757</x>
+               <y>150</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Parent</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness1">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>50</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness2">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>50</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness3">
+             <property name="geometry">
+              <rect>
+               <x>380</x>
+               <y>50</y>
+               <width>140</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness4">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>50</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness5">
+             <property name="geometry">
+              <rect>
+               <x>750</x>
+               <y>50</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness6">
+             <property name="geometry">
+              <rect>
+               <x>13</x>
+               <y>180</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness7">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>180</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness8">
+             <property name="geometry">
+              <rect>
+               <x>390</x>
+               <y>180</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness9">
+             <property name="geometry">
+              <rect>
+               <x>590</x>
+               <y>180</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="fitness10">
+             <property name="geometry">
+              <rect>
+               <x>757</x>
+               <y>180</y>
+               <width>141</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:white;
+</string>
+             </property>
+             <property name="text">
+              <string>Fitness: </string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+         <zorder>targetText</zorder>
+         <zorder>bestFintessScore</zorder>
+         <zorder>bestFintessScore_2</zorder>
+         <zorder>frame_4</zorder>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="windgedFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>120</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+
+border:None;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,2,2">
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>2</horstretch>
+              <verstretch>2</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>2</width>
+              <height>2</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout" rowstretch="5,0,0,0" columnstretch="1,0,0">
+             <item row="0" column="2">
+              <widget class="QLabel" name="MRNumber">
+               <property name="font">
+                <font>
+                 <family>Tlwg Typist</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	color: white;
+	
+
+}</string>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="crossOverRateTX_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:Black;</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;COR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="parentNumber_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:Black;</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;NP&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1" rowspan="2">
+              <widget class="QSlider" name="numberParentSlider_2">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal {
+    border: 3px solid;
+    height: 4px;
+    margin: 0px;
+	;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 188, 191, 255), stop:1 rgba(255, 255, 255, 255));
+    }
+QSlider::handle:horizontal {
+    background-color: yellow;
+    border: 1px solid;
+    height: 4px;
+    width: 12px;
+    margin: -5px 0px;
+    }</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QSlider" name="crossOverRateSlider_2">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal {
+    border: 3px solid;
+    height: 4px;
+    margin: 0px;
+	;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(127, 191, 0, 255), stop:1 rgba(255, 255, 255, 255));
+    }
+QSlider::handle:horizontal {
+    background-color: yellow;
+    border: 1px solid;
+    height: 4px;
+    width: 12px;
+    margin: -5px 0px;
+    }</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QSlider" name="mutationRateSlider_2">
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="sizeIncrement">
+                <size>
+                 <width>2</width>
+                 <height>2</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QSlider::groove:horizontal {
+    border: 3px solid;
+    height: 4px;
+    margin: 0px;
+	;
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 191, 60, 255), stop:1 rgba(255, 255, 255, 255));
+    }
+QSlider::handle:horizontal {
+    background-color: yellow;
+    border: 1px solid;
+    height: 4px;
+    width: 12px;
+    margin: -5px 0px;
+    }</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="mutationRateText_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:Black;</string>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;MR&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2" rowspan="2">
+              <widget class="QLabel" name="CORNumber">
+               <property name="font">
+                <font>
+                 <family>Tlwg Typist</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	color: white;
+	
+
+}</string>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QLabel" name="NPNumber">
+               <property name="font">
+                <font>
+                 <family>Tlwg Typist</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+	color: white;
+	
+
+}</string>
+               </property>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>60</y>
+               <width>321</width>
+               <height>44</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLineEdit" name="populationNumberInput">
+                <property name="maximumSize">
+                 <size>
+                  <width>140</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>KacstDecorative</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgb(125, 125, 125);
+color: White;
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Population No</string>
+                </property>
+                <property name="cursorPosition">
+                 <number>13</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="startButton">
+                <property name="maximumSize">
+                 <size>
+                  <width>140</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:Green;
+color:White</string>
+                </property>
+                <property name="text">
+                 <string>Start</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QLineEdit" name="targetTextInput">
+             <property name="geometry">
+              <rect>
+               <x>69</x>
+               <y>24</y>
+               <width>171</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>KacstDecorative</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(125, 125, 125);
+color: White;</string>
+             </property>
+             <property name="text">
+              <string>TARGET</string>
+             </property>
+             <property name="cursorPosition">
+              <number>6</number>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Background/Background.qrc"/>
+ </resources>
+ <connections/>
+</ui>
